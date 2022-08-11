@@ -1,0 +1,131 @@
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    font-family: 'Roboto', sans-serif;
+}
+
+
+h1 {
+ 
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    margin-left: 200px;
+}
+
+.formulario{
+    display: flex;
+}
+
+.planes{
+    width: 800px;
+}
+
+.planes ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.planes ul li{
+    width: 200px;
+    color: white;
+    text-align: center;
+}
+
+p{
+    color: white;
+    width: 800px;
+    text-align: center;
+}
+
+span{
+    color: white;
+}
+
+.button {
+  align-items: center;
+  appearance: none;
+  background-color: #3EB2FD;
+  background-image: linear-gradient(1deg, #4F58FD, #149BF3 99%);
+  background-size: calc(100% + 20px) calc(100% + 20px);
+  border-radius: 100px;
+  border-width: 0;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: CircularStd,sans-serif;
+  font-size: 1rem;
+  height: auto;
+  justify-content: center;
+  line-height: 1.5;
+  padding: 6px 330px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color .2s,background-position .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.button:active,
+.button:focus {
+  outline: none;
+}
+
+.button:hover {
+  background-position: -20px -20px;
+}
+
+.button:focus:not(:active) {
+  box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 .125em;
+}
+
+select{
+  margin-left: 330px;
+}
+
+.nombre{
+  width: 100%;
+  display: flex;
+  margin-left: 17px;
+  margin-top: 10px;
+}
+
+
+.contenedor{
+  background-color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+tabla {
+  table-layout: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+th {
+  padding: 30px;
+  background-color: black;
+  color: white;
+}
+
+td {
+  padding: 30px;
+  justify-content: center;
+}
