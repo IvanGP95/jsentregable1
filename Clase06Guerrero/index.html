@@ -9,13 +9,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
-    <script src="./simulador.js"></script>
 </head>
 <body>
     <h1>Suscripcion FitnessClub</h1>
     <div class="formulario">
         <div class="planes">
-            <input class="button" type="button" onclick="capturar()" value="Suscribirme a plan Basico"/>
+            <input class="button" type="submit" id="btn1" value="Suscribirme a plan Basico"/>
             <input class="nombre" id="nombre2" type="text" placeholder="Ingresa tu Nombre Completo">
                 <ul>
                     <li>Contrato Anual</li>
@@ -36,7 +35,7 @@
                     </select>
                 </div><br><br>
                 <p>Al momento de realizar el contrato solo tendras opción a elegir entre nuestro gimnasio multifuncional o nuestro gimnasio de MMA</p>
-                <input class="button" type="button" onclick="capturar2()" value="Suscribirme a plan Premium"/>
+                <input class="button" type="submit" id="btn2" value="Suscribirme a plan Premium"/>
                 <input class="nombre" id="nombre3" type="text" placeholder="Ingresa tu Nombre Completo">
                 <ul>
                     <li>Contrato Anual</li>
@@ -78,5 +77,6 @@
         </table>
     </div>
 
+    <script src="./simulador.js"></script>
 </body>
 </html>

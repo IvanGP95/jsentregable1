@@ -23,6 +23,9 @@ function premium(){
     }
 }
 
+const btnBasico = document.getElementById("btn1");
+btnBasico.addEventListener("click", capturar);
+
 function capturar(){
     function Registro(nombre,plan,parcialidades,total){
         this.nombre=nombre;
@@ -31,8 +34,8 @@ function capturar(){
         this.total=total;
     }
     const precio = (a,b,c) => a + b + c
-    var nombreCapturar = document.getElementById("nombre2").value;
-    var parcialidadesCapturar = document.querySelector("#basico").value;
+    let nombreCapturar = document.getElementById("nombre2").value;
+    let parcialidadesCapturar = document.querySelector("#basico").value;
     let cuotas = parseInt(parcialidadesCapturar)
     let inscripcion = 300
     let mantenimientoAnual= 599
@@ -49,6 +52,8 @@ function capturar(){
     console.log(usuarios);
    }
 
+   const btnPremium = document.getElementById('btn2');
+   btnPremium.addEventListener("click", capturar2);
    function capturar2(){
     function Registro(nombre,plan,parcialidades,total){
         this.nombre=nombre;
@@ -57,8 +62,8 @@ function capturar(){
         this.total=total;
     }
     const precio = (a,b,c) => a + b + c
-    var nombreCapturar = document.getElementById("nombre3").value;
-    var parcialidadesCapturar = document.querySelector("#parcialidadesPremium").value;
+    let nombreCapturar = document.getElementById("nombre3").value;
+    let parcialidadesCapturar = document.querySelector("#parcialidadesPremium").value;
     let cuotas = parseInt(parcialidadesCapturar)
     let inscripcion = 0
     let mantenimientoAnual= 599
@@ -74,3 +79,7 @@ function capturar(){
     console.log(usuarios);
     document.getElementById("tabla").innerHTML += '<tbody><td>'+nuevoRegistro.nombre+'</td><td>'+nuevoRegistro.plan+'</td><td>'+nuevoRegistro.parcialidades+'</td><td>$ '+nuevoRegistro.total+' MXN</td></tbody>';
    }
+
+
+
+
