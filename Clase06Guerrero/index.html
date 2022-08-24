@@ -1,82 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FitnessClub</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles.css">
-</head>
-<body>
-    <h1>Suscripcion FitnessClub</h1>
-    <div class="formulario">
-        <div class="planes">
-            <input class="button" type="submit" id="btn1" value="Suscribirme a plan Basico"/>
-            <input class="nombre" id="nombre2" type="text" placeholder="Ingresa tu Nombre Completo">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+    <div class="container-fluid m-0 p-0">
+      <nav class="navbar navbar-dark navbar-expand-lg bg-dark" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Falcon Gym</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav justify">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#">Registro</a>
+              <a class="nav-link" href="#">Usuarios</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+      <!-- Registro Basico -->
+      <div class="container-lg">
+        <div class="container">
+            <h1>Suscripcion FitnessClub</h1>
+            <div class="formulario">
+                <br />
+              <div class="planes">
+                <input
+                  class="nombre"
+                  id="nombre2"
+                  type="text"
+                  placeholder="Ingresa tu Nombre Completo"
+                /> <br /> <br />
                 <ul>
-                    <li>Contrato Anual</li>
-                    <li>Inscripción</li>
-                    <li>Mantenimiento Anual</li>
+                  <li>Contrato Anual</li>
+                  <li>Inscripción</li>
+                  <li>Mantenimiento Anual</li>
                 </ul>
                 <ul>
-                    <li>$3,588</li>
-                    <li>$300</li>
-                    <li>$599</li>
+                  <li>$3,588</li>
+                  <li>$300</li>
+                  <li>$599</li>
                 </ul>
-                <div class="parcialidades" >
-                    <select id="basico">
-                        <option selected>-- Selecciona Tus Parcialidades --</option>
-                        <option class="anual" value="1">1 Pago de contado</option>
-                        <option class="6" value="6">6 meses</option>
-                        <option class="12" value="12">12 meses</option>
+                <div class="parcialidades">
+                  <select id="basico">
+                    <option selected>-- Selecciona Tus Parcialidades --</option>
+                    <option class="anual" value="1">1 Pago de contado</option>
+                    <option class="6" value="6">6 meses</option>
+                    <option class="12" value="12">12 meses</option>
+                  </select>
+                </div>
+                <br />
+                <p>
+                  Al momento de realizar el contrato solo tendras opción a elegir
+                  entre nuestro gimnasio multifuncional o nuestro gimnasio de MMA
+                </p>
+                <input
+                  class="btn btn-primary"
+                  type="submit"
+                  id="btn1"
+                  value="Suscribirme a plan Basico"
+                /> <br /><br />
+              </div>
+              <!-- Registro Premium -->
+                <input
+                  class="nombre"
+                  id="nombre3"
+                  type="text"
+                  placeholder="Ingresa tu Nombre Completo"
+                />
+                <ul>
+                  <li>Contrato Anual</li>
+                  <li>Inscripción</li>
+                  <li>Mantenimiento Anual</li>
+                </ul>
+                <ul>
+                  <li>$5,988</li>
+                  <li>$0</li>
+                  <li>$599</li>
+                </ul>
+                <div class="parcialidades">
+                    <select id="parcialidadesPremium">
+                      <option selected>-- Selecciona Tus Parcialidades --</option>
+                      <option class="anual" value="1">1 Pago de contado</option>
+                      <option class="6" value="6">6 meses</option>
+                      <option class="12">12 meses</option>
                     </select>
-                </div><br><br>
-                <p>Al momento de realizar el contrato solo tendras opción a elegir entre nuestro gimnasio multifuncional o nuestro gimnasio de MMA</p>
-                <input class="button" type="submit" id="btn2" value="Suscribirme a plan Premium"/>
-                <input class="nombre" id="nombre3" type="text" placeholder="Ingresa tu Nombre Completo">
-                <ul>
-                    <li>Contrato Anual</li>
-                    <li>Inscripción</li>
-                    <li>Mantenimiento Anual</li>
-                </ul>
-                <ul>
-                    <li>$5,988</li>
-                    <li>$0</li>
-                    <li>$599</li>
-                </ul>
+                  </div>
+                  <br />
+            
+                  <p>
+                    El plan Premium te da acceso a ingresar a nuestras instalaciones de
+                    gimnasio asi como a nuestras clases de MMA
+                  </p>
+                  <input
+                    class="btn btn-primary"
+                    type="submit"
+                    id="btn2"
+                    value="Suscribirme a plan Premium"
+                  />
+                  <br /><br />
+              </div>
+            </div>
+            <table class="table justify-content-center" id=tabla>
+                <thead class="thead-inverse">
+                  <tr>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Plan</th>
+                    <th scope="col">Cuotas</th>
+                    <th scope="col">Total/Cuota</th>
+                  </tr>
+                </thead>
+              </table>
+        </div>
 
-        </div>        
-
-    </div>
-
-    <div class="parcialidades">
-        <select id="parcialidadesPremium">
-            <option selected>-- Selecciona Tus Parcialidades --</option>
-            <option class="anual" value="1">1 Pago de contado</option>
-            <option class="6" value="6">6 meses</option>
-            <option class="12">12 meses</option>
-        </select>
-    </div><br><br>
-
-    <p>El plan Premium te da acceso a ingresar a nuestras instalaciones de gimnasio asi como a nuestras clases de MMA</p>
-    <br><br>
-
-    <div class="contenedor">
-        <table class="tabla" id="tabla">
-            <thead class="thead-inverse">
-                <tr>
-                    <th>Nombre</th>
-                    <th>Plan</th>
-                    <th>Parcialidades</th>
-                    <th>Total por Parcialidad</th>
-                </tr>
-            </thead>
-        </table>
-    </div>
-
+ 
+      </div>
     <script src="./simulador.js"></script>
-</body>
+  </body>
 </html>
