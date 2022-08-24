@@ -44,16 +44,9 @@ function capturar(){
     
 
     nuevoRegistro = new Registro(nombreCapturar,"Básico",parcialidadesCapturar,parseFloat(precioFinal));
-    if(nombreCapturar === ""){
-        alert("Favor de llenar todos los datos")
-    } else {
-    agregar();}
+    agregar();
 }
    let usuarios = [];
-   function agregar(){
-    usuarios.push(nuevoRegistro);
-    console.log(usuarios);
-   }
 
    const btnPremium = document.getElementById('btn2');
    btnPremium.addEventListener("click", capturar2);
@@ -75,18 +68,12 @@ function capturar(){
     
 
     nuevoRegistro = new Registro(nombreCapturar,"Premium",parcialidadesCapturar,parseFloat(precioFinal));
-    if(nombreCapturar === ""){
-        alert("Favor de llenar todos los datos")
-    } else {
-    agregar();}
+    agregar();
 }
    function agregar(){
-    let usuarios = JSON.parse(localStorage.getItem("usuarios"));
     usuarios.push(nuevoRegistro);
-    let nuevoRegistroJSON = JSON.stringify(usuarios);
-    localStorage.setItem("usuarios", nuevoRegistroJSON);
     console.log(usuarios);
     document.getElementById("tabla").innerHTML += '<tbody><td>'+nuevoRegistro.nombre+'</td><td>'+nuevoRegistro.plan+'</td><td>'+nuevoRegistro.parcialidades+'</td><td>$ '+nuevoRegistro.total+' MXN</td></tbody>';
+    localStorage.setItem("usuarios", JSON.stringify(usuarios));
+    let usuariosJS = JSON.parse(localStorage.getItem("usuarios"));
    }
-
-
