@@ -75,7 +75,10 @@ function capturar(){
     agregar();
 }
    function agregar(){
+    let usuarios = JSON.parse(localStorage.getItem("usuarios"));
     usuarios.push(nuevoRegistro);
+    let nuevoRegistroJSON = JSON.stringify(usuarios);
+    localStorage.setItem("usuarios", nuevoRegistroJSON);
     console.log(usuarios);
     document.getElementById("tabla").innerHTML += '<tbody><td>'+nuevoRegistro.nombre+'</td><td>'+nuevoRegistro.plan+'</td><td>'+nuevoRegistro.parcialidades+'</td><td>$ '+nuevoRegistro.total+' MXN</td></tbody>';
    }
