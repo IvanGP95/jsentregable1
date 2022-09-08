@@ -1,0 +1,27 @@
+{"usuarios": [
+	{"Nombre": "Ivan Guerrero",
+	"Plan": "Basico",
+	"Parcialidades": "6",
+	"Total": "$747.33 MXN"
+    },
+	{"Nombre": "Angel Perales",
+	"Plan": "Premium",
+	"Parcialidades": "12",
+	"Total": "$548.92 MXN"
+    },
+    {"Nombre": "Jose Fernandez",
+	"Plan": "Premium",
+	"Parcialidades": "1",
+	"Total": "$6,587.00 MXN"
+    },
+    {"Nombre": "Ramiro Gutierrez",
+	"Plan": "Basico",
+	"Parcialidades": "12",
+	"Total": "$373.92 MXN"
+    },
+    {"Nombre": "Sofia Medrano",
+	"Plan": "Basico",
+	"Parcialidades": "1",
+	"Total": "$4,487.00 MXN"
+    }
+] }

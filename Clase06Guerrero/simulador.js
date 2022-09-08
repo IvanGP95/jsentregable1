@@ -96,5 +96,28 @@ function capturar(){
     console.log(usuarios);
     document.getElementById("tabla").innerHTML += '<tbody><td>'+nuevoRegistro.nombre+'</td><td>'+nuevoRegistro.plan+'</td><td>'+nuevoRegistro.parcialidades+'</td><td>$ '+nuevoRegistro.total+' MXN</td></tbody>';
     localStorage.setItem("usuarios", JSON.stringify(usuarios));
-    let usuariosJS = JSON.parse(localStorage.getItem("usuarios"));
+    nombre2.reset();
+    nombre3.reset();
+    basico.reset();
+    parcialidadesPremium.reset();
    }
+
+   let data = JSON.parse(localStorage.getItem("usuarios"));
+
+   const tabla = document.getElementById("tabla")
+
+fetch("simulador.json")
+.then(response => response.json())
+.then(json => console.log(json))
+
+
+
+
+   
+
+    
+
+
+
+
+
